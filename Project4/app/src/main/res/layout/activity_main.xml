@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="206dp"
+        android:onClick="nextSettingCallbackFunction"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layoutsettings" />
+
+    <TextView
+        android:id="@+id/textViewSettingInfo"
+        android:layout_width="145dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="52dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/layoutsettings"
+        app:layout_constraintTop_toBottomOf="@+id/informationLayout" />
+
+    <LinearLayout
+        android:id="@+id/informationLayout"
+        android:layout_width="410dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutsettings"
+        android:layout_width="174dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="73dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNext"
+        app:layout_constraintTop_toBottomOf="@+id/informationLayout"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonumentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewPhotoMonument"
+            android:layout_width="198dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@android:drawable/ic_menu_gallery"
+            app:layout_constraintStart_toEndOf="@+id/buttonAddPhotoMonument"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/buttonAddPhotoMonument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="56dp"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextNameMonument"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:hint="Enter Name:"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewPhotoMonument" />
+
+        <EditText
+            android:id="@+id/editTextHistoryMonument"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:hint="History Of Monument:"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNameMonument" />
+
+        <EditText
+            android:id="@+id/editTextVisitMonument"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:hint="Best Time To Visit:"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextHistoryMonument" />
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="85dp"
+            android:ems="10"
+            android:hint="Ticket Price:"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextVisitMonument" />
+
+        <TextView
+            android:id="@+id/textViewLocationMonument"
+            android:layout_width="153dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="60dp"
+            android:text="Current Location"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/buttonAddLocationMonument"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+        <ImageButton
+            android:id="@+id/buttonAddLocationMonument"
+            android:layout_width="69dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="46dp"
+            android:src="@android:drawable/ic_menu_mylocation"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextPrice" />
+
+        <Button
+            android:id="@+id/buttonAddMonument"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="140dp"
+            android:background="#16C600"
+            android:text="Add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocationMonument" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
